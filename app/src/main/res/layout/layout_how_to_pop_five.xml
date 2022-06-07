@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_black"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+    android:id="@+id/iv_gif"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_200sdp"
+    android:src="@drawable/ic_logo"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginHorizontal="@dimen/_22sdp"
+        app:cardCornerRadius="@dimen/_22sdp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/iv_gif"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:padding="@dimen/_5sdp"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+          android:background="@color/color_black">
+          <TextView
+              android:id="@+id/tv_heading_how_to_pop"
+              android:layout_marginTop="@dimen/_10sdp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/_20ssp"
+              android:textColor="@color/color_text"
+              android:text="@string/your_qr_code"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintEnd_toEndOf="parent"/>
+          <ImageView
+              android:id="@+id/civ_one"
+              android:layout_marginLeft="@dimen/_8sdp"
+              android:layout_marginTop="@dimen/_20sdp"
+              android:layout_width="@dimen/_25sdp"
+              android:layout_height="@dimen/_25sdp"
+              android:textColor="@color/color_text"
+              android:src="@drawable/img_number_one"
+              app:layout_constraintTop_toBottomOf="@+id/tv_heading_how_to_pop"
+              app:layout_constraintStart_toStartOf="parent"/>
+          <TextView
+              android:id="@+id/tv_with_civ_one"
+              android:layout_marginLeft="@dimen/_3sdp"
+              android:layout_marginTop="@dimen/_18sdp"
+              android:layout_width="@dimen/_200sdp"
+              android:layout_height="wrap_content"
+              android:textColor="@color/color_text"
+              app:layout_constraintTop_toBottomOf="@+id/tv_heading_how_to_pop"
+              app:layout_constraintStart_toEndOf="@+id/civ_one"
+              android:textSize="@dimen/_14ssp"
+              android:text="@string/use_your_tikl_qr_code_to_share_with_older_phone_models"
+              />
+          <ImageView
+              android:id="@+id/civ_two"
+              android:layout_marginTop="@dimen/_30sdp"
+              android:layout_width="@dimen/_25sdp"
+              android:layout_height="@dimen/_25sdp"
+              android:layout_marginLeft="@dimen/_8sdp"
+              android:src="@drawable/img_number_two"
+              app:layout_constraintTop_toBottomOf="@+id/civ_one"
+              app:layout_constraintStart_toStartOf="parent"/>
+
+          <TextView
+              android:id="@+id/tv_with_civ_two"
+              android:layout_marginLeft="@dimen/_3sdp"
+              android:layout_marginTop="@dimen/_20sdp"
+              android:layout_width="@dimen/_200sdp"
+              android:layout_height="wrap_content"
+              app:layout_constraintTop_toBottomOf="@+id/tv_with_civ_one"
+              app:layout_constraintStart_toEndOf="@+id/civ_two"
+              android:textSize="@dimen/_14ssp"
+              android:textColor="@color/color_text"
+              android:text="@string/your_qr_code_can_be_accessed_on_the_top_right_of_your_profile_and_in_the_main_menu"
+              />
+
+
+          <androidx.cardview.widget.CardView
+
+              android:id="@+id/btn_directed_profie1"
+              android:background="@color/grey"
+              android:layout_width="@dimen/_240sdp"
+              android:layout_height="wrap_content"
+              app:cardCornerRadius="@dimen/_8sdp"
+              android:layout_marginBottom="@dimen/_10sdp"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/tv_with_civ_two"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintEnd_toEndOf="parent"
+              android:layout_marginTop="@dimen/_15sdp">
+              <TextView
+                  android:id="@+id/tv_continue_layout_one"
+                  android:gravity="center"
+                  android:padding="@dimen/_5sdp"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:text="@string/str_continue"
+                  android:textSize="@dimen/_16ssp"
+                  android:textColor="@color/white"
+                  android:background="@color/app_color"
+                  />
+          </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

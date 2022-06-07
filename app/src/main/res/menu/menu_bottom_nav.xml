@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home_fragment"
+        android:icon="@drawable/ic_edit_profile_nav_menu"
+        android:title=""
+        />
+
+    <item
+        android:id="@+id/nav_edit_profile_fragment"
+        android:icon="@drawable/ic_edit_profile_nav_menu"
+        android:title=""/>
+
+    <item
+        android:id="@+id/nav_activate_fragment"
+        android:icon="@drawable/ic_activate_nav_menu"
+        android:title=""/>
+</menu>

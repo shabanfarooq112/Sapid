@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/twohome_fragment">
+
+
+    <fragment
+        android:id="@+id/home_fragment"
+        android:label="Home"
+        android:name="com.horizam.ezlinq.fragments.HomeBusinessFragment"
+        tools:layout="@layout/fragment_profile_1_home" />
+    <fragment
+        android:id="@+id/search_fragment"
+        android:name="com.horizam.ezlinq.fragments.SearchpeopleFragment"
+        android:label="SeachPeople"
+        tools:layout="@layout/fragment_searchpeople" />
+
+    <fragment
+        android:id="@+id/twohome_fragment"
+        android:name="com.horizam.ezlinq.fragments.HomePlatformsFragment"
+        android:label="hometwo"
+        tools:layout="@layout/fragment_profile2" />
+    <fragment
+        android:id="@+id/tikl_profile_fragment"
+        android:name="com.horizam.ezlinq.fragments.OtherUsersProfileFragment"
+        android:label="tiklprofile"
+        tools:layout="@layout/fragment_tikl_profile"/>
+
+
+
+
+
+</navigation>

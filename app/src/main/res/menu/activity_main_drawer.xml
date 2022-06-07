@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+   <group>
+    <item
+        android:id="@+id/nav_home_fragment"
+        android:icon="@drawable/ic_home_nav_menue"
+        android:title="@string/str_menu_home"
+        android:iconTint="@color/app_color"
+        />
+
+    <item
+        android:id="@+id/nav_activate_fragment"
+        android:icon="@drawable/ic_activate_nav_menu"
+        android:title="@string/str_menue_Activate"/>
+</group>
+<group>
+
+
+
+
+
+    <item
+        android:id="@+id/nav_read_a_tickle_fragment"
+        android:icon="@drawable/ic_read_tikle_nav_menu"
+        android:title="@string/str_menue_Read_a_Tickle"/>
+    <item
+        android:id="@+id/nav_QR_fragment"
+        android:icon="@drawable/ic_qr_code_nav_menu"
+        android:title="@string/str_menue_my_QR_code"/>
+    <item
+        android:id="@+id/nav_Buy_tickle_fragment"
+        android:icon="@drawable/ic_buy_tickle_nav_menu"
+        android:title="@string/str_menue_Buy_a_tickle"/>
+</group>
+<!--    <item-->
+<!--        android:id="@+id/nav_go_pro_famgment"-->
+<!--        android:icon="@drawable/ic_go_pro_nav_menu"-->
+<!--        android:title="@string/str_menue_Go_pro"/>-->
+  <group>
+    <item
+        android:id="@+id/nav_home_to_tick_fagment"
+        android:icon="@drawable/ic_how_to_tick_nav_menu"
+        android:title="@string/str_menue_Home_to_tick"/>
+    <item
+        android:id="@+id/nav_logout_framment"
+        android:icon="@drawable/ic_log_out_nav_menu"
+        android:title="@string/str_menue_Logout"/>
+  </group>
+</menu>

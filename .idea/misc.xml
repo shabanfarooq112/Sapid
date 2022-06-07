@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Dell/Documents/GitHub/Ezlinq_Android/app/src/main/res/drawable/bg_rectangle_black.xml" value="0.19375" />
+        <entry key="..\:/Users/Dell/Documents/GitHub/Ezlinq_Android/app/src/main/res/drawable/bg_rectangle_white.xml" value="0.19375" />
+        <entry key="..\:/Users/Dell/Documents/GitHub/Ezlinq_Android/app/src/main/res/drawable/ic_person.xml" value="0.19375" />
+        <entry key="..\:/Users/Dell/Documents/GitHub/Ezlinq_Android/app/src/main/res/drawable/shape.xml" value="0.19375" />
+        <entry key="..\:/Users/Dell/Documents/GitHub/Ezlinq_Android/app/src/main/res/layout/activity_activate.xml" value="0.1734375" />
+        <entry key="..\:/Users/Dell/Documents/GitHub/Ezlinq_Android/app/src/main/res/layout/activity_edit_profile.xml" value="0.1734375" />
+        <entry key="..\:/Users/Dell/Documents/GitHub/Ezlinq_Android/app/src/main/res/layout/activity_forget_password_otp.xml" value="0.1734375" />
+        <entry key="..\:/Users/Dell/Documents/GitHub/Ezlinq_Android/app/src/main/res/layout/activity_item.xml" value="0.1734375" />
+        <entry key="..\:/Users/Dell/Documents/GitHub/Ezlinq_Android/app/src/main/res/layout/activity_main.xml" value="0.1734375" />
+        <entry key="..\:/Users/Dell/Documents/GitHub/Ezlinq_Android/app/src/main/res/layout/activity_sign_in.xml" value="0.1734375" />
+        <entry key="..\:/Users/Dell/Documents/GitHub/Ezlinq_Android/app/src/main/res/layout/activity_sign_up.xml" value="0.1734375" />
+        <entry key="..\:/Users/Dell/Documents/GitHub/Ezlinq_Android/app/src/main/res/layout/activity_splash.xml" value="0.1734375" />
+        <entry key="..\:/Users/Dell/Documents/GitHub/Ezlinq_Android/app/src/main/res/layout/activity_welcome.xml" value="0.1734375" />
+        <entry key="..\:/Users/Dell/Documents/GitHub/Ezlinq_Android/app/src/main/res/layout/fragment_item_popup.xml" value="0.1734375" />
+        <entry key="..\:/Users/Dell/Documents/GitHub/Ezlinq_Android/app/src/main/res/layout/fragment_profile2.xml" value="0.12395833333333334" />
+        <entry key="..\:/Users/Dell/Documents/GitHub/Ezlinq_Android/app/src/main/res/layout/fragment_tikl_profile.xml" value="0.12395833333333334" />
+        <entry key="..\:/Users/Dell/Documents/GitHub/Ezlinq_Android/app/src/main/res/layout/list_item_links.xml" value="0.1734375" />
+        <entry key="..\:/Users/Dell/Documents/GitHub/Ezlinq_Android/app/src/main/res/layout/list_item_links_platform.xml" value="0.1734375" />
+        <entry key="..\:/Users/Dell/Documents/GitHub/Ezlinq_Android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.19375" />
+        <entry key="..\:/Users/Dell/Documents/GitHub/LeShare_Android/app/src/main/res/drawable/bg_rectangle_white.xml" value="0.17395833333333333" />
+        <entry key="..\:/Users/Dell/Documents/GitHub/LeShare_Android/app/src/main/res/drawable/shape.xml" value="0.19375" />
+        <entry key="..\:/Users/Dell/Documents/GitHub/LeShare_Android/app/src/main/res/layout/activity_activate.xml" value="0.15364583333333334" />
+        <entry key="..\:/Users/Dell/Documents/GitHub/LeShare_Android/app/src/main/res/layout/activity_qrscan.xml" value="0.1734375" />
+        <entry key="..\:/Users/Dell/Documents/GitHub/LeShare_Android/app/src/main/res/layout/activity_sign_up.xml" value="0.1" />
+        <entry key="..\:/Users/Dell/Documents/GitHub/LeShare_Android/app/src/main/res/layout/activity_splash.xml" value="0.1734375" />
+        <entry key="..\:/Users/Dell/Documents/GitHub/LeShare_Android/app/src/main/res/layout/fragment_item_popup.xml" value="0.1734375" />
+        <entry key="..\:/Users/Dell/Documents/GitHub/LeShare_Android/app/src/main/res/layout/fragment_profile2.xml" value="0.1734375" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/drawable-xxhdpi/ic_nav_icon.xml" value="0.16927083333333334" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/drawable/bg_rectangle_black.xml" value="0.1" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/drawable/ic_circle.xml" value="0.16927083333333334" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/drawable/ic_edit.xml" value="0.14947916666666666" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/drawable/ic_nav_icon.xml" value="0.6770833333333334" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/drawable/ic_nfc.xml" value="0.16927083333333334" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/drawable/ic_qr_code.xml" value="0.16927083333333334" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/drawable/shape.xml" value="0.14947916666666666" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/layout/activity__buy_tikl.xml" value="0.153125" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/layout/activity_activate.xml" value="0.153125" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/layout/activity_activate_product.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/layout/activity_edit_profile.xml" value="0.153125" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/layout/activity_forget_password_email.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/layout/activity_forget_password_otp.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/layout/activity_howtotikl.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/layout/activity_item.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/layout/activity_main.xml" value="0.153125" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/layout/activity_qr_camera_code_scanner.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/layout/activity_qrscan.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/layout/activity_reset_password.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/layout/activity_sign_in.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/layout/activity_sign_up.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/layout/activity_splash.xml" value="0.15942028985507245" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/layout/activity_tikl.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/layout/activity_user_name.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/layout/activity_welcome.xml" value="0.1" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/layout/fragment_item_popup.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/layout/fragment_profile2.xml" value="0.15806159420289856" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/layout/fragment_profile_1_home.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/layout/fragment_read_tikl.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/layout/fragment_searchpeople.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/layout/fragment_tikl_profile.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/layout/layout_how_to_pop_five.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/layout/layout_how_to_pop_four.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/layout/layout_how_to_pop_one.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/layout/layout_how_to_pop_six.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/layout/layout_how_to_pop_three.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/layout/layout_how_to_pop_two.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/layout/list_item_links.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/layout/list_item_links_platform.xml" value="0.1796875" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/layout/nav_header_main.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/layout/platform_item_recyclerview.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/layout/profile_one_last_item.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/layout/search_list_item.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/layout/search_list_item_featured.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/LeShare_Android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/drawable-xxhdpi/ic_nav_icon.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/drawable/bg_rectangle_black.xml" value="0.1527777777777778" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/drawable/bg_shape_minus.xml" value="0.13958333333333334" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/drawable/ic_activate_nav_menu.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/drawable/ic_buy_tickle_nav_menu.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/drawable/ic_close_screen.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/drawable/ic_filled_home_profile_icon.xml" value="0.1527777777777778" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/drawable/ic_home_nav_menue.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/drawable/ic_how_to_tick_nav_menu.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/drawable/ic_log_out_nav_menu.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/drawable/ic_nav_icon.xml" value="0.7833333333333333" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/drawable/ic_qr_code_nav_menu.xml" value="0.1527777777777778" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/drawable/ic_read_tikle_nav_menu.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/drawable/ic_round_search.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/drawable/shape.xml" value="0.18020833333333333" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/layout/activity__buy_tikl.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/layout/activity_activate.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/layout/activity_activate_product.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/layout/activity_edit_profile.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/layout/activity_forget_password_email.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/layout/activity_forget_password_otp.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/layout/activity_howtotikl.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/layout/activity_item.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/layout/activity_main.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/layout/activity_qr_camera_code_scanner.xml" value="0.1375" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/layout/activity_qrscan.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/layout/activity_reset_password.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/layout/activity_sign_in.xml" value="0.11018518518518519" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/layout/activity_sign_up.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/layout/activity_splash.xml" value="0.1796875" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/layout/activity_tikl.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/layout/activity_user_name.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/layout/activity_welcome.xml" value="0.11018518518518519" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/layout/fragment_item_popup.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/layout/fragment_profile2.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/layout/fragment_profile_1_home.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/layout/fragment_read_tikl.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/layout/fragment_searchpeople.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/layout/fragment_tikl_profile.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/layout/layout_error.xml" value="0.1796875" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/layout/layout_how_to_pop_five.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/layout/layout_how_to_pop_four.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/layout/layout_how_to_pop_one.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/layout/layout_how_to_pop_six.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/layout/layout_how_to_pop_three.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/layout/layout_how_to_pop_two.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/layout/list_item_links.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/layout/list_item_links_platform.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/layout/nav_header_main.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/layout/platform_item_recyclerview.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/layout/profile_one_last_item.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/layout/search_list_item.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/layout/search_list_item_featured.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/menu/activity_main_drawer.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/menu/menu_bottom_nav.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/shaban/Documents/GitHub/NTap_android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

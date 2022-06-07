@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape"
+    tools:context=".fragments.BottomSheetPlatform">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_close_screen"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="26dp"
+        android:src="@drawable/ic_close_screen"
+        app:civ_border_color="@color/app_color"
+        app:civ_border_width="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/tv_platform_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Instagram"
+        android:textColor="@color/color_text"
+        android:textSize="@dimen/_22ssp"
+        app:layout_constraintStart_toStartOf="@+id/iv_scan_tikl"
+        app:layout_constraintEnd_toEndOf="@+id/iv_scan_tikl"
+    app:layout_constraintTop_toBottomOf="@+id/iv_scan_tikl" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_scan_tikl"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"
+        android:src="@drawable/img_insta_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_pro"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:elevation="@dimen/_5sdp"
+        android:src="@drawable/img_pro"
+        android:visibility="gone"
+        app:civ_border_color="@color/bg_tikle"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toBottomOf="@id/et__one_item"
+        app:layout_constraintEnd_toEndOf="@+id/et__one_item"
+        app:layout_constraintStart_toEndOf="@+id/et__one_item"
+        app:layout_constraintTop_toBottomOf="@id/iv_scan_tikl" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/et__one_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_13sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_scan_tikl">
+
+        <EditText
+            android:visibility="gone"
+            android:id="@+id/et_label"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@color/bg_tikle"
+            android:maxLength="15"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_bellow_scane"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="Go pro to change link titles"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et__one_item" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/et_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_65sdp"
+        android:layout_marginEnd="@dimen/_50sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bellow_scane">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_tikle"
+            android:gravity="center"
+
+            android:orientation="horizontal"
+            android:padding="@dimen/_7sdp">
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/img_drawable"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:src="@drawable/img_insta_logo" />
+
+            <EditText
+
+                android:id="@+id/platforms_path"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:background="@color/bg_tikle"
+                android:drawableEnd="@drawable/img_cross_small"
+                android:hint="website link"
+                android:paddingRight="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@color/grey"
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_open_item">
+
+        <TextView
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/app_color"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16ssp" />
+
+        <ProgressBar
+            android:id="@+id/progress_save_platform"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/white"
+            android:visibility="gone" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_guide"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:gravity="center"
+        android:textColor="@color/color_text"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_item" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btn_open_item"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@color/black"
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_save_item"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_guide">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/open"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16ssp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_40sdp"
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_open_item"
+        app:layout_constraintTop_toBottomOf="@+id/tv_guide">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/btn_delete_item"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/delete"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16ssp" />
+        <ProgressBar
+            android:id="@+id/progress_remove_platform"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:indeterminateTint="@color/white" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+

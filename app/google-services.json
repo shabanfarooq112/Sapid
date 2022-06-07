@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "579787743839",
+    "project_id": "ezlinq-105bd",
+    "storage_bucket": "ezlinq-105bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:579787743839:android:abfe1852e07beb6a9931ea",
+        "android_client_info": {
+          "package_name": "com.horizam.ezlinq"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "579787743839-bp6smc7r47rcr3bpdr7d3l0gjna7hlb1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.horizam.ezlinq",
+            "certificate_hash": "d78ec86380b049ee73f5fe3e0bb1b465aa720fdf"
+          }
+        },
+        {
+          "client_id": "579787743839-0jog3k7375rp5cjpa3pv7u9446mfnjtg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGFOVCdFcZnTjaof3HgNnmAgBAG6rgY0s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "579787743839-0jog3k7375rp5cjpa3pv7u9446mfnjtg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

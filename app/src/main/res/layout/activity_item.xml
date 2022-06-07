@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_black"
+    tools:context="com.horizam.ezlinq.activities.ItemActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_close_screen"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="36dp"
+        android:src="@drawable/ic_close_screen"
+        app:civ_border_color="@color/app_color"
+        app:civ_border_width="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_item_pic"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_instagram"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_remove_platform"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:background="@drawable/bg_shape_minus"
+        android:scaleType="centerInside"
+        android:src="@drawable/img_minus_circle"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_item_pic"
+        app:layout_constraintEnd_toStartOf="@+id/iv_item_pic"
+        app:layout_constraintStart_toStartOf="@+id/iv_item_pic"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/et_title_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:background="@android:color/transparent"
+        android:drawablePadding="@dimen/_5sdp"
+        android:fontFamily="@font/roboto_regular"
+        android:maxLength="25"
+        android:text="@string/str_username"
+        android:textAlignment="center"
+        android:textSize="@dimen/_16ssp"
+        android:textColor="@color/color_text"
+        android:textStyle="bold"
+        android:windowSoftInputMode="stateHidden"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_item_pic" />
+
+    <!--    <TextView-->
+    <!--        android:gravity="center"-->
+    <!--        android:id="@+id/tv_item_name"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/iv_item_pic"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/iv_item_pic"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/iv_item_pic"-->
+    <!--        android:text="Instagram"-->
+    <!--        android:textSize="@dimen/_18ssp"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:layout_marginTop="@dimen/_8sdp"-->
+    <!--        android:drawableRight="@drawable/ic_edit"-->
+    <!--        android:drawablePadding="@dimen/_5sdp"-->
+    <!--        />-->
+
+    <EditText
+        android:id="@+id/et_item"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/white_100"
+        android:hint="username"
+        android:paddingLeft="@dimen/_10sdp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_title_edit" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btn_open_item"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@color/black"
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_save_item"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_item">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#dddddd"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="open"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16ssp"
+            android:visibility="gone" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:elevation="@dimen/_2sdp"
+        android:indeterminateTint="@color/white"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_save_item"
+        app:layout_constraintEnd_toEndOf="@+id/btn_save_item"
+        app:layout_constraintStart_toStartOf="@+id/btn_save_item"
+        app:layout_constraintTop_toTopOf="@+id/btn_save_item" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btn_save_item"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:layout_constraintEnd_toEndOf="@id/et_item"
+        app:layout_constraintStart_toStartOf="@id/et_item"
+        app:layout_constraintTop_toBottomOf="@+id/et_item">
+
+        <TextView
+            android:id="@+id/tv_save_platform"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/app_color"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16ssp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/MySwitch"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_social"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_save" />
+
+    <TextView
+        android:id="@+id/tv_social"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="@string/social"
+        android:textSize="@dimen/_20ssp"
+        android:textColor="@color/color_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_save_item" />
+
+    <TextView
+        android:id="@+id/tv_business"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="Business"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/btn_save_item"
+        app:layout_constraintStart_toEndOf="@+id/switch_item"
+        app:layout_constraintTop_toBottomOf="@id/btn_save_item" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btn_add_another_item"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25sdp"
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch_item">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="Add another"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16ssp"
+            android:visibility="gone" />
+    </androidx.cardview.widget.CardView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/civ_pro"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:elevation="@dimen/_5sdp"
+        android:src="@drawable/img_pro"
+        android:visibility="gone"
+        app:civ_border_color="@color/bg_tikle"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toBottomOf="@id/btn_add_another_item"
+        app:layout_constraintEnd_toEndOf="@+id/btn_add_another_item"
+        app:layout_constraintStart_toEndOf="@+id/btn_add_another_item"
+        app:layout_constraintTop_toBottomOf="@id/switch_item"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

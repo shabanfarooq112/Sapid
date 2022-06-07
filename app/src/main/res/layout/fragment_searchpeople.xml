@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="@dimen/_10sdp"
+    android:background="@color/color_black"
+    tools:context=".fragments.SearchpeopleFragment">
+    <androidx.cardview.widget.CardView
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:background="@color/color_black"
+        android:layout_marginBottom="-14dp"
+        app:cardCornerRadius="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_black">
+
+            <ImageView
+                android:id="@+id/iv_location_icon"
+                android:layout_width="@dimen/_40sdp"
+                android:visibility="gone"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:src="@drawable/img_location_icon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:src="@drawable/ic_logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:src="@drawable/img_pro"
+                app:civ_border_color="#DCDCDC"
+                app:civ_border_width="3dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_location_icon"
+                app:layout_constraintEnd_toEndOf="@+id/iv_location_icon"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                app:cardCornerRadius="@dimen/_30sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_logo">
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/sv_search_user"
+                    android:layout_width="match_parent"
+                    app:queryBackground="@android:color/transparent"
+                    android:layout_height="match_parent"
+                    app:iconifiedByDefault="false"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/ic_search_icon"
+                    android:drawablePadding="@dimen/_3sdp"
+                    android:focusable="true"
+                    android:hint="@string/search_people"
+                    android:paddingStart="@dimen/_7sdp" />
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/tv_featured"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/featured"
+                android:fontFamily="@font/roboto_bold"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/color_text"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardView"
+                app:layout_constraintBottom_toTopOf="@id/rv_featured_results"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_featured_results"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintTop_toBottomOf="@+id/tv_featured"
+                app:layout_constraintBottom_toTopOf="@+id/tv_conected"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:listitem="@layout/search_list_item_featured" />
+            <TextView
+                android:id="@+id/tv_conected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_connected"
+                android:fontFamily="@font/roboto_bold"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/color_text"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rv_featured_results"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_search_results"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_conected"
+                tools:listitem="@layout/search_list_item" />
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone"
+                android:text="@string/when_someone_tiks_you_they_will_be_saved_here_in_your_people"
+                android:textSize="@dimen/_18sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

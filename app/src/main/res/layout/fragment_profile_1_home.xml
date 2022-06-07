@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_100"
+    tools:context=".fragments.HomeBusinessFragment">
+
+    <LinearLayout
+        android:id="@+id/toobal_profile1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingVertical="@dimen/_3sdp"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/nav_icon_home"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_nav_icon" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_weight="6"
+            android:src="@drawable/ic_logo" />
+
+        <ImageView
+            android:id="@+id/iv_qrcode"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_qr_code_nav_menu" />
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_user_pic_profile_one"
+        android:layout_width="@dimen/_85sdp"
+        android:layout_height="@dimen/_85sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:src="@drawable/img_profile"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toobal_profile1" />
+
+    <TextView
+        android:id="@+id/tv_name_profile1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="12dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/civ_user_pic_profile_one"
+        app:layout_constraintTop_toBottomOf="@+id/toobal_profile1" />
+
+    <TextView
+        android:id="@+id/tv_bio_edit_profile2"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:maxLength="100"
+        android:text=""
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/tv_name_profile1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name_profile1" />
+
+    <TextView
+        android:id="@+id/tv_botom_user_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/civ_user_pic_profile_one"
+        app:layout_constraintStart_toStartOf="@+id/civ_user_pic_profile_one"
+        app:layout_constraintTop_toBottomOf="@+id/civ_user_pic_profile_one" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btn_directed_profie1"
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@color/black"
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_vcf_profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_botom_user_profile">
+
+        <TextView
+            android:id="@+id/btn_direct_on_off"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="Direct Off"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16ssp" />
+
+        <ProgressBar
+            android:id="@+id/progress_direct_on_off"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/white"
+            android:visibility="gone" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btn_vcf_profile"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="@id/btn_directed_profie1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_directed_profie1"
+        app:layout_constraintTop_toTopOf="@id/btn_directed_profie1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="Edit profile"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16ssp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_tikle_guide_profile1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:text=""
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btn_vcf_profile"
+        app:layout_constraintStart_toStartOf="@+id/btn_directed_profie1"
+        app:layout_constraintTop_toBottomOf="@id/btn_directed_profie1" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:elevation="@dimen/_7sdp"
+        android:src="@drawable/img_pro"
+        app:civ_border_color="#DCDCDC"
+        app:civ_border_width="3dp"
+        app:layout_constraintEnd_toEndOf="@+id/cv_add_bussines_profile1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tikle_guide_profile1" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_add_bussines_profile1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:cardCornerRadius="@dimen/_30sdp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_tikle_guide_profile1"
+        app:layout_constraintStart_toStartOf="@+id/tv_tikle_guide_profile1"
+        app:layout_constraintTop_toBottomOf="@id/tv_tikle_guide_profile1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_add_business_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:background="@color/white"
+                android:gravity="left"
+                android:padding="@dimen/_5sdp"
+                android:text="Add to business profile"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18ssp" />
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+
+                android:layout_marginVertical="@dimen/_33sdp"
+                android:src="@drawable/ic_add_bussiness_profile1" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ImageView
+        android:id="@+id/iv_bottom_logo_profile1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:src="@drawable/ic_logo"
+        app:layout_constraintEnd_toEndOf="@+id/cv_add_bussines_profile1"
+        app:layout_constraintStart_toStartOf="@+id/cv_add_bussines_profile1"
+        app:layout_constraintTop_toBottomOf="@id/cv_add_bussines_profile1"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_patent_pending_profile1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Patent Pending "
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/iv_bottom_logo_profile1"
+        app:layout_constraintStart_toStartOf="@+id/iv_bottom_logo_profile1"
+        app:layout_constraintTop_toBottomOf="@id/iv_bottom_logo_profile1" />
+
+    <ImageView
+
+        android:id="@+id/iv_patent_pending_profile1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:src="@drawable/ic_patent_pending_profile1"
+        app:layout_constraintBottom_toBottomOf="@id/tv_patent_pending_profile1"
+        app:layout_constraintStart_toEndOf="@+id/tv_patent_pending_profile1"
+        app:layout_constraintTop_toTopOf="@+id/tv_patent_pending_profile1" />
+
+
+    <TextView
+        android:id="@+id/tv_help_center_profile1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:text="Help Center"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/iv_patent_pending_profile1"
+        app:layout_constraintStart_toStartOf="@+id/tv_patent_pending_profile1"
+        app:layout_constraintTop_toBottomOf="@id/tv_patent_pending_profile1" />
+
+    <ImageView
+        android:id="@+id/iv_change_fragment_next"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:src="@drawable/ic_back_icon"
+        app:layout_constraintBottom_toBottomOf="@id/cv_add_bussines_profile1"
+        app:layout_constraintStart_toEndOf="@+id/cv_add_bussines_profile1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/cv_add_bussines_profile1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

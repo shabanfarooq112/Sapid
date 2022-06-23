@@ -27,15 +27,18 @@ class PlatformsAdapter(
     }
 
     override fun onBindViewHolder(holder: Holder, i: Int) {
-        var category: Categories = categories[i]
 
-        holder.textView.text = category.name
-        platforms = category.platforms
-        holder.recyclerView.setHasFixedSize(true)
-        holder.adapter = SocialMediaChildAdapter(platforms, context)
-        holder.recyclerView.adapter = holder.adapter
-        holder.adapter.notifyDataSetChanged()
-
+        if (categories[i].name.contains("https")) {
+            holder.textView.text = ""
+        } else {
+            var category: Categories = categories[i]
+            holder.textView.text = category.name
+            platforms = category.platforms
+            holder.recyclerView.setHasFixedSize(true)
+            holder.adapter = SocialMediaChildAdapter(platforms, context)
+            holder.recyclerView.adapter = holder.adapter
+            holder.adapter.notifyDataSetChanged()
+        }
 
     }
 

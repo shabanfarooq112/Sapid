@@ -9,7 +9,7 @@ class Constants {
         var userResponse: UserResponse? = null
         var STR_TOKEN: String = ""
         const val STR_UNKNOWN_ERROR = "Unknown Error"
-        const val BASE_URL = "https://ezlinq.me/"
+        const val BASE_URL = "http://34.227.245.249/"
         const val PERMISSION_CODE = 1001;
         const val IMAGE_PICK_CODE = 1000;
         const val EMAIL = "email"
@@ -28,20 +28,17 @@ class Constants {
         var PLATFORMS_ICON = ""
         var PLATFORMS_LABEL: String? = ""
         var PLATFORMS_ID = 0
-        var PLATFORMS_HINT: String?=""
+        var PLATFORMS_HINT: String? = ""
         var PLATFORMS_DESCRIPTION: String? = ""
         var BASE_LINK_FOR_PLATFORM_PATH: String? = ""
-
         var USER_NAME = ""
         var NAME = ""
         var USER_BIO: String? = ""
         var otherUserName = ""
-
         var NFC_INTENT = "nfc_intent"
         var SEARCH_INTENT = "SEARCH_RESULT"
         var REGEX_FOR_VALID_USERNAME =
             "^(?=[a-zA-Z0-9_._]{3,25}\$)(?!.*[_.]{2})[^_.].*[^_.]\$".toRegex()
-
         var PLATFORM_TEXT = "Text"
         var PLATFORM_ADDRESS = "Address"
         var PLATFORM_EMAIL = "Email"
@@ -55,11 +52,8 @@ class Constants {
         var PLATFORM_FACEBOOK = "Facebook"
         var DIRECT_ON = "Direct On"
         var DIRECT_OFF = "Direct Off"
-
         var ADD_LINKS = "Add Links"
-
         var currentActivityContext: Context? = null
-
         const val VCF_DIRECTORY = "/Tikl_VFC"
     }
 }

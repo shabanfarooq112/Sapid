@@ -28,12 +28,11 @@
         <activity android:name="com.horizam.ezlinq.activities.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
-
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <data
-                    android:host="ezlinq.me"
+                    android:host="sapid.ezlinq.bio"
                     android:scheme="https" />
             </intent-filter>
             <intent-filter>
@@ -46,7 +45,7 @@
                 <action android:name="android.nfc.action.TAG_DISCOVERED" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <data
-                    android:host="ezlinq.me"
+                    android:host="sapid.ezlinq.bio"
                     android:scheme="https" />
             </intent-filter>
 

@@ -6,16 +6,12 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.horizam.ezlinq.databinding.ActivityActivateBinding
 
-
 class ActivateActivity : AppCompatActivity() {
-
     private lateinit var binding: ActivityActivateBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 //        setLocale()
-
-
         binding = ActivityActivateBinding.inflate(layoutInflater)
         val view: View = binding.root
         setContentView(view)

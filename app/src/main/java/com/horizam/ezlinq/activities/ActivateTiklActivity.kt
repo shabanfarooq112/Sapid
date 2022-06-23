@@ -57,7 +57,11 @@ class ActivateTiklActivity : AppCompatActivity() {
         }
         binding.btnActivate.setOnClickListener {
             check = true
-            Toast.makeText(this, "Tap your LeShare on your phone to activate", Toast.LENGTH_SHORT)
+            Toast.makeText(
+                this,
+                getString(R.string.tap_your_sapid_on_your_phone_to_activate),
+                Toast.LENGTH_SHORT
+            )
                 .show()
             startNfcWrinting()
         }

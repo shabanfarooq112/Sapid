@@ -13,94 +13,95 @@
         android:layout_height="@dimen/_160sdp"
         android:layout_marginTop="@dimen/_80sdp"
         android:src="@drawable/ic_logo"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.2"/>
+        app:layout_constraintVertical_bias="0.2" />
 
     <TextView
         android:id="@+id/tv_welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/str_welcome_to_tikl"
-        android:textSize="@dimen/_20ssp"
-        android:textColor="@color/color_text"
-        android:fontFamily="@font/roboto_bold"
         android:layout_marginTop="@dimen/_10sdp"
-        app:layout_constraintTop_toBottomOf="@+id/iv_tikl_welcome"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/str_welcome_to_tikl"
+        android:textColor="@color/color_text"
+        android:textSize="@dimen/_20ssp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@+id/iv_tikl_welcome" />
+
     <TextView
         android:id="@+id/tv_share_instantly"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/str_instantly_share_anything"
-        android:textSize="@dimen/_14ssp"
-        android:textColor="@color/color_text"
-        android:fontFamily="@font/roboto_light"
         android:layout_marginTop="@dimen/_10sdp"
-        app:layout_constraintTop_toBottomOf="@+id/tv_welcome"
+        android:fontFamily="@font/roboto_light"
+        android:text="@string/str_instantly_share_anything"
+        android:textColor="@color/color_text"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@+id/tv_welcome" />
 
     <Button
         android:id="@+id/btn_set_tikl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:background="@drawable/bg_rectangle_black"
+        android:fontFamily="@font/roboto_bold"
         android:text="@string/str_set_up_your_tikl"
         android:textAllCaps="false"
-        android:fontFamily="@font/roboto_bold"
-        android:layout_marginTop="@dimen/_30sdp"
-        android:background="@drawable/bg_rectangle_black"
-        android:layout_marginEnd="@dimen/_30sdp"
-        android:layout_marginStart="@dimen/_30sdp"
         android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_share_instantly"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_share_instantly" />
 
     <Button
         android:id="@+id/btn_buy_tikl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:background="@drawable/bg_rectangle_white"
+        android:fontFamily="@font/roboto_bold"
         android:text="@string/str_buy_a_tikl"
         android:textAllCaps="false"
-        android:fontFamily="@font/roboto_bold"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:background="@drawable/bg_rectangle_white"
-        android:layout_marginEnd="@dimen/_30sdp"
-        android:layout_marginStart="@dimen/_30sdp"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_set_tikl"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_set_tikl" />
 
     <TextView
         android:id="@+id/tv_already_have_account"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/str_already_have_tikl"
-        android:textSize="@dimen/_14ssp"
-        android:textColor="@color/color_text"
-        android:fontFamily="@font/roboto_light"
         android:layout_marginBottom="@dimen/_30sdp"
-        app:layout_constraintHorizontal_chainStyle="packed"
+        android:fontFamily="@font/roboto_light"
+        android:text="@string/str_already_have_tikl"
+        android:textColor="@color/color_text"
+        android:textSize="@dimen/_14ssp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/tv_sign_in"/>
+        app:layout_constraintEnd_toStartOf="@id/tv_sign_in"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/tv_sign_in"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/str_sign_in"
-        android:textSize="@dimen/_14ssp"
-        android:textColor="@color/color_text"
-        app:layout_constraintHorizontal_chainStyle="packed"
         android:layout_marginStart="@dimen/_5sdp"
-        android:fontFamily="@font/roboto_bold"
         android:layout_marginBottom="@dimen/_30sdp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/str_sign_in"
+        android:textColor="@color/app_color"
+        android:textSize="@dimen/_14ssp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@id/tv_already_have_account"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/tv_already_have_account" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

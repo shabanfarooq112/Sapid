@@ -119,7 +119,6 @@ class EditProfileActivity : AppCompatActivity() {
         })
     }
 
-
     private fun initSharedPrefference() {
         prefManager = PrefManager(this)
     }

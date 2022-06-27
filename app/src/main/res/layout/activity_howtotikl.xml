@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:background="@drawable/img_bg_go"
     android:layout_height="match_parent"
-    tools:context="com.horizam.ezlinq.activities.HowToTiklActivity">
+    tools:context="com.horizam.sapid.activities.HowToTiklActivity">
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"

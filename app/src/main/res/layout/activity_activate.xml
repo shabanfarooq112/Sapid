@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/color_black"
-    tools:context="com.horizam.ezlinq.activities.ActivateActivity">
+    tools:context="com.horizam.sapid.activities.ActivateActivity">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">

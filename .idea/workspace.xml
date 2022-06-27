@@ -12,9 +12,11 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91c36df8-0651-4d46-a7c2-f2032e795aa3" name="Default Changelist" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-es/strings.xml" afterDir="false" />
+    <list default="true" id="91c36df8-0651-4d46-a7c2-f2032e795aa3" name="Default Changelist" comment="commit">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/activities/WelcomeActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/utils/Utils.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_logo_drawable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-en/strings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
@@ -25,51 +27,99 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/google-services.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/horizam/ezlinq/ExampleInstrumentedTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/horizam/sapid/ExampleInstrumentedTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/ic_launcher-playstore.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/ic_launcher-playstore.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/Constants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/Constants.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/activities/ActivateActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/activities/ActivateActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/activities/ActivateTiklActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/activities/ActivateTiklActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/activities/EditProfileActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/activities/EditProfileActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/adapters/PlatformsAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/adapters/PlatformsAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/networking/response/CategoryAndPlatformResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/networking/response/CategoryAndPlatformResponse.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/networking/response/UserResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/networking/response/UserResponse.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_logo.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/App.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/App.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/Constants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/Constants.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/MyFirebaseMessagingService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/MyFirebaseMessagingService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/activities/ActivateActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/activities/ActivateActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/activities/ActivateTiklActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/activities/ActivateTiklActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/activities/BuyTiklActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/activities/BuyTiklActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/activities/EditProfileActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/activities/EditProfileActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/activities/ForgetPasswordEmailActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/activities/ForgetPasswordEmailActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/activities/ForgetPasswordOtpActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/activities/ForgetPasswordOtpActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/activities/HowToTiklActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/activities/HowToTiklActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/activities/ItemActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/activities/ItemActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/activities/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/activities/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/activities/PrefManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/activities/PrefManager.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/activities/QrCameraCodeScannerActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/activities/QrCameraCodeScannerActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/activities/QrscanActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/activities/QrscanActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/activities/ResetPasswordActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/activities/ResetPasswordActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/activities/SignInActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/activities/SignInActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/activities/SignUpActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/activities/SignUpActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/activities/SplashActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/activities/SplashActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/activities/TiklActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/activities/TiklActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/activities/UserNameActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/activities/UserNameActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/activities/WelcomeActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/adapters/FeatureListAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/adapters/FeatureListAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/adapters/PlatformsAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/adapters/PlatformsAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/adapters/ProfileOneItemAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/adapters/ProfileOneItemAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/adapters/ProfilePlatformsAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/adapters/ProfilePlatformsAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/adapters/SearchListAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/adapters/SearchListAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/adapters/SocialMediaChildAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/adapters/SocialMediaChildAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/callbacks/DrawerHandler.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/callbacks/DrawerHandler.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/event_bus_events/BackFromBottomSheetHome.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/event_bus_events/BackFromBottomSheetHome.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/fragments/BottomSheetPlatform.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/fragments/BottomSheetPlatform.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/fragments/BottomSheetRead.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/fragments/BottomSheetRead.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/fragments/HomeBusinessFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/fragments/HomeBusinessFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/fragments/HomePlatformsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/fragments/HomePlatformsFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/fragments/OtherUsersProfileFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/fragments/OtherUsersProfileFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/fragments/SearchpeopleFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/fragments/SearchpeopleFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/networking/ApiListener.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/networking/ApiListener.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/networking/ApiService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/networking/ApiService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/networking/ErrorHandling.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/networking/ErrorHandling.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/networking/NetworkingHelper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/networking/NetworkingHelper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/networking/NetworkingModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/networking/NetworkingModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/networking/RetrofitClient.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/networking/RetrofitClient.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/networking/request/AddPlatformRequest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/networking/request/AddPlatformRequest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/networking/request/DirectOnOffRequest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/networking/request/DirectOnOffRequest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/networking/request/ForgetPasswordRequest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/networking/request/ForgetPasswordRequest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/networking/request/LoginUserRequest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/networking/request/LoginUserRequest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/networking/request/RegisterUserRequest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/networking/request/RegisterUserRequest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/networking/request/ResetPasswordRequest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/networking/request/ResetPasswordRequest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/networking/request/SwapPlatformRequest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/networking/request/SwapPlatformRequest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/networking/request/UpdateProfileRequest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/networking/request/UpdateProfileRequest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/networking/response/APIError.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/networking/response/APIError.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/networking/response/AddPlatformResponse..kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/networking/response/AddPlatformResponse..kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/networking/response/AddPlatformResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/networking/response/AddPlatformResponse.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/networking/response/CategoryAndPlatformResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/networking/response/CategoryAndPlatformResponse.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/networking/response/GeneralResponseWithStatusAndMessage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/networking/response/GeneralResponseWithStatusAndMessage.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/networking/response/SearchUserResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/networking/response/SearchUserResponse.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/networking/response/UpdateProfileResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/networking/response/UpdateProfileResponse.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/networking/response/UserLoginResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/networking/response/UserLoginResponse.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/networking/response/UserProfileRespose.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/networking/response/UserProfileRespose.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/networking/response/UserResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/networking/response/UserResponse.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/nfc_utils/NFCUtil.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/nfc_utils/NFCUtil.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/nfc_utils/ReadFromNfcCard.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/nfc_utils/ReadFromNfcCard.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/nfc_utils/WriteOnNfcCard.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/nfc_utils/WriteOnNfcCard.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/utils/ChangeLanguage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/utils/ChangeLanguage.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/utils/ImageFilePath.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/utils/ImageFilePath.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/utils/RecycleViewItemMoveCallback.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/utils/RecycleViewItemMoveCallback.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/utils/SwapPlatform.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/utils/SwapPlatform.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity__buy_tikl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity__buy_tikl.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_activate.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_activate.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_activate_product.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_activate_product.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_profile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_forget_password_email.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_forget_password_email.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_forget_password_otp.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_forget_password_otp.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_howtotikl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_howtotikl.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_item.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_welcome.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_welcome.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-fr-rFR/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-ru-rRU/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-se-rSE/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/nav_header_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/nav_header_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/nav_graph.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/nav_graph.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/horizam/ezlinq/ExampleUnitTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/horizam/sapid/ExampleUnitTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[b50cf6db]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[ce0717175b26870c017e]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -130,8 +180,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
         <option value="valueResourceFile" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -154,7 +204,6 @@
   </component>
   <component name="ProjectId" id="21iwmo20tSotoQCRk6zgv3Q3zpl" />
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -171,7 +220,7 @@
     <property name="cidr.known.project.marker" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
     <property name="settings.editor.selected.configurable" value="experimental" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
@@ -344,7 +393,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654604183192</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="commit">
+      <created>1655999285287</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1655999285287</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -367,95 +423,126 @@
     <MESSAGE value="forget password" />
     <MESSAGE value="intial commit" />
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/activities/EditProfileActivity.kt</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/activities/EditProfileActivity.kt</url>
           <line>529</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/activities/EditProfileActivity.kt</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/activities/EditProfileActivity.kt</url>
           <line>528</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/fragments/OtherUsersProfileFragment.kt</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/fragments/OtherUsersProfileFragment.kt</url>
           <line>306</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/adapters/ProfilePlatformsAdapter.kt</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/adapters/ProfilePlatformsAdapter.kt</url>
           <line>60</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/adapters/ProfilePlatformsAdapter.kt</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/adapters/ProfilePlatformsAdapter.kt</url>
           <line>62</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/adapters/ProfilePlatformsAdapter.kt</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/adapters/ProfilePlatformsAdapter.kt</url>
           <line>73</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/adapters/ProfilePlatformsAdapter.kt</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/adapters/ProfilePlatformsAdapter.kt</url>
           <line>74</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/adapters/ProfilePlatformsAdapter.kt</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/adapters/ProfilePlatformsAdapter.kt</url>
           <line>75</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/adapters/ProfilePlatformsAdapter.kt</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/adapters/ProfilePlatformsAdapter.kt</url>
           <line>76</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/adapters/ProfilePlatformsAdapter.kt</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/adapters/ProfilePlatformsAdapter.kt</url>
           <line>77</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/adapters/ProfilePlatformsAdapter.kt</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/adapters/ProfilePlatformsAdapter.kt</url>
           <line>78</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/activities/EditProfileActivity.kt</url>
-          <line>580</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/activities/ForgetPasswordEmailActivity.kt</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/activities/ForgetPasswordEmailActivity.kt</url>
           <line>65</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/networking/RetrofitClient.kt</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/networking/RetrofitClient.kt</url>
           <line>83</line>
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/networking/RetrofitClient.kt</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/networking/RetrofitClient.kt</url>
           <line>90</line>
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/networking/RetrofitClient.kt</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/networking/RetrofitClient.kt</url>
           <line>85</line>
           <option name="timeStamp" value="36" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/activities/MainActivity.kt</url>
+          <line>329</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/activities/MainActivity.kt</url>
+          <line>319</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/activities/MainActivity.kt</url>
+          <line>312</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/activities/SplashActivity.kt</url>
+          <line>39</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/activities/SplashActivity.kt</url>
+          <line>34</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/activities/SplashActivity.kt</url>
+          <line>40</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/activities/SplashActivity.kt</url>
+          <line>45</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-field">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/horizam/ezlinq/networking/response/APIError.kt</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/horizam/sapid/networking/response/APIError.kt</url>
           <line>5</line>
-          <properties myFieldName="message" myClassName="com.horizam.ezlinq.networking.response.APIError" />
+          <properties myFieldName="message" myClassName="com.horizam.sapid.networking.response.APIError" />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>

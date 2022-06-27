@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:579787743839:android:abfe1852e07beb6a9931ea",
         "android_client_info": {
-          "package_name": "com.horizam.ezlinq"
+          "package_name": "com.horizam.sapid"
         }
       },
       "oauth_client": [
@@ -17,7 +17,7 @@
           "client_id": "579787743839-bp6smc7r47rcr3bpdr7d3l0gjna7hlb1.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.horizam.ezlinq",
+            "package_name": "com.horizam.sapid",
             "certificate_hash": "d78ec86380b049ee73f5fe3e0bb1b465aa720fdf"
           }
         },

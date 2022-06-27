@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.horizam.ezlinq">
+    package="com.horizam.sapid">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -14,7 +14,7 @@
     <uses-feature android:name="android.hardware.camera.autofocus" />
 
     <application
-        android:name="com.horizam.ezlinq.App"
+        android:name="com.horizam.sapid.App"
         android:allowBackup="true"
         android:configChanges="locale"
         android:icon="@mipmap/ic_launcher"
@@ -25,7 +25,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tikl"
         android:usesCleartextTraffic="true">
-        <activity android:name="com.horizam.ezlinq.activities.SplashActivity">
+        <activity android:name="com.horizam.sapid.activities.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -56,26 +56,26 @@
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />
-        <activity android:name="com.horizam.ezlinq.activities.ResetPasswordActivity" />
-        <activity android:name="com.horizam.ezlinq.activities.ForgetPasswordOtpActivity" />
-        <activity android:name="com.horizam.ezlinq.activities.ForgetPasswordEmailActivity" />
-        <activity android:name="com.horizam.ezlinq.activities.MainActivity" />
-        <activity android:name="com.horizam.ezlinq.activities.SignUpActivity" />
-        <activity android:name="com.horizam.ezlinq.activities.UserNameActivity" />
-        <activity android:name="com.horizam.ezlinq.activities.EditProfileActivity" />
-        <activity android:name="com.horizam.ezlinq.activities.QrscanActivity" />
-        <activity android:name="com.horizam.ezlinq.activities.TiklActivity" />
-        <activity android:name="com.horizam.ezlinq.activities.BuyTiklActivity" />
-        <activity android:name="com.horizam.ezlinq.activities.ItemActivity" />
-        <activity android:name="com.horizam.ezlinq.activities.ActivateTiklActivity" />
-        <activity android:name="com.horizam.ezlinq.activities.ActivateActivity" />
-        <activity android:name="com.horizam.ezlinq.activities.HowToTiklActivity" />
-        <activity android:name="com.horizam.ezlinq.activities.WelcomeActivity" />
-        <activity android:name="com.horizam.ezlinq.activities.SignInActivity" />
-        <activity android:name="com.horizam.ezlinq.activities.QrCameraCodeScannerActivity" />
+        <activity android:name="com.horizam.sapid.activities.ResetPasswordActivity" />
+        <activity android:name="com.horizam.sapid.activities.ForgetPasswordOtpActivity" />
+        <activity android:name="com.horizam.sapid.activities.ForgetPasswordEmailActivity" />
+        <activity android:name="com.horizam.sapid.activities.MainActivity" />
+        <activity android:name="com.horizam.sapid.activities.SignUpActivity" />
+        <activity android:name="com.horizam.sapid.activities.UserNameActivity" />
+        <activity android:name="com.horizam.sapid.activities.EditProfileActivity" />
+        <activity android:name="com.horizam.sapid.activities.QrscanActivity" />
+        <activity android:name="com.horizam.sapid.activities.TiklActivity" />
+        <activity android:name="com.horizam.sapid.activities.BuyTiklActivity" />
+        <activity android:name="com.horizam.sapid.activities.ItemActivity" />
+        <activity android:name="com.horizam.sapid.activities.ActivateTiklActivity" />
+        <activity android:name="com.horizam.sapid.activities.ActivateActivity" />
+        <activity android:name="com.horizam.sapid.activities.HowToTiklActivity" />
+        <activity android:name="com.horizam.sapid.activities.WelcomeActivity" />
+        <activity android:name="com.horizam.sapid.activities.SignInActivity" />
+        <activity android:name="com.horizam.sapid.activities.QrCameraCodeScannerActivity" />
 
         <service
-            android:name=".MyFirebaseMessagingService"
+            android:name="com.horizam.sapid.MyFirebaseMessagingService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />

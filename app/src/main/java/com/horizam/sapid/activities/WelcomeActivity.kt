@@ -43,7 +43,7 @@ class WelcomeActivity : AppCompatActivity() {
             )
         }
         binding.btnBuyTikl.setOnClickListener {
-            val url = "https://www.gotaps.me"
+            val url = "https://www.sapid.mx"
             val i = Intent(Intent.ACTION_VIEW)
             i.data = Uri.parse(url)
             startActivity(i)
@@ -58,6 +58,9 @@ class WelcomeActivity : AppCompatActivity() {
         if (prefManager.getLang() == "en") {
             cvEnglish.visibility = View.VISIBLE
             cvSpanish.visibility = View.INVISIBLE
+        } else if (prefManager.getLang() == "es") {
+            cvEnglish.visibility = View.INVISIBLE
+            cvSpanish.visibility = View.VISIBLE
         } else {
             cvEnglish.visibility = View.INVISIBLE
             cvSpanish.visibility = View.VISIBLE

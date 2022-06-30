@@ -42,9 +42,9 @@ class BottomSheetRead : BottomSheetDialogFragment() {
         binding = FragmentReadTiklBinding.inflate(layoutInflater)
         clickListeners()
         setNfcWriter()
-        Glide.with(requireActivity())
-            .load(R.raw.gif_read_activate)
-            .into(binding.ivScanTikl)
+//        Glide.with(requireActivity())
+//            .load(R.raw.gif_read_activate)
+//            .into(binding.ivScanTikl)
 
         return binding.root
 

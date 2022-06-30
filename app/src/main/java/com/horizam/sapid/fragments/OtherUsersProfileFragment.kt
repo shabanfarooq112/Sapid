@@ -115,6 +115,7 @@ class OtherUsersProfileFragment : Fragment() {
 
             })
     }
+
     private fun showMainLoader() {
         binding.progressBarMain.visibility = View.VISIBLE
     }
@@ -130,6 +131,44 @@ class OtherUsersProfileFragment : Fragment() {
         ) {
 
             val strs = prefManager.getUserTiklData()!!.split("/").toTypedArray()
+            val userApikey = strs[strs.size - 1]
+            val strs1 = userApikey.split("?").toTypedArray()
+            val userApikey1 = strs1[0]
+            networkingModel = NetworkingModel()
+            networkingModel.exeOtherUserprofileApi(userApikey1, object :
+                ApiListener<UserResponse> {
+                override fun onSuccess(body: UserResponse?) {
+                    swipeRefreshLayout.isRefreshing = false
+                    hideMainLoader()
+                    body.also {
+                        if (it!!.status == 200) {
+                            connect_user_id = it.profile!!.id!!
+                            connected = it.profile!!.connected!!
+                            setRecyclerview(it.profile!!.userPlatforms)
+                            setProifiledata(
+                                it.profile!!.firstName,
+                                it.profile!!.username,
+                                it.profile!!.bio,
+                                it.profile!!.private!!,
+//                                null,
+                                it.profile!!.photo,
+                                it.profile!!.tiks!!,
+                                it.profile!!.tiks!!
+                            )
+
+                        } else {
+                            Toast.makeText(App.getAppContext(), it.message, Toast.LENGTH_SHORT)
+                                .show()
+                        }
+                    }
+                }
+
+                override fun onFailure(error: Throwable) {
+                    Toast.makeText(App.getAppContext(), "$error", Toast.LENGTH_SHORT).show()
+                }
+            }, "gotap")
+        } else if (requireActivity().intent.hasExtra("url")) {
+            val strs = requireActivity().intent.getStringExtra("url")!!.split("/").toTypedArray()
             val userApikey = strs[strs.size - 1]
             val strs1 = userApikey.split("?").toTypedArray()
             val userApikey1 = strs1[0]
@@ -237,23 +276,23 @@ class OtherUsersProfileFragment : Fragment() {
         tiks: Int,
         verified: Int
     ) {
-        binding.tvNameOther.text=name
+        binding.tvNameOther.text = name
         binding.tvUsernameOther.text = username
         binding.tvBio.text = bio
         Glide.with(this)
             .load("${Constants.BASE_URL}$photo")
-            .error(R.drawable.ic_logo)
-            .placeholder(R.drawable.img_placeholder_profile)
+            .error(R.drawable.ic_logo_drawable)
+            .placeholder(R.drawable.ic_logo_drawable)
             .into(binding.civUserPic)
-        if(private==1){
+        if (private == 1) {
             binding.tvBotomUserProfile.text = ""
-        }else{
+        } else {
             binding.tvBotomUserProfile.text = "Tap : ${tiks.toString()}"
         }
-        if(verified== 1){
-            binding.ivBlueTick.visibility= View.VISIBLE
-        }else{
-            binding.ivBlueTick.visibility= View.GONE
+        if (verified == 1) {
+            binding.ivBlueTick.visibility = View.VISIBLE
+        } else {
+            binding.ivBlueTick.visibility = View.GONE
         }
         if (private == 1 && connected == 0) {
             binding.tvNotPublic.visibility = View.VISIBLE
@@ -281,16 +320,16 @@ class OtherUsersProfileFragment : Fragment() {
     ) {
 
         search = 1
-        binding.tvNameOther.text=name
+        binding.tvNameOther.text = name
         binding.tvUsernameOther.text = username
-        binding.tvBio.text = bio?:""
+        binding.tvBio.text = bio ?: ""
         Glide.with(this)
             .load("${Constants.BASE_URL}$photo")
             .placeholder(R.drawable.ic_logo)
             .into(binding.civUserPic)
-        if(private==1){
+        if (private == 1) {
             binding.tvBotomUserProfile.text = ""
-        }else{
+        } else {
             binding.tvBotomUserProfile.text = "Tap : ${tiks.toString()}"
         }
 //        if(verified== 1){
@@ -309,7 +348,6 @@ class OtherUsersProfileFragment : Fragment() {
 //                getPlatFormsFromCategories(categories)
 //            )
         }
-
 
 
 //        binding.tvUserName.text = username

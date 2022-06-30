@@ -73,7 +73,10 @@
         <activity android:name="com.horizam.sapid.activities.WelcomeActivity" />
         <activity android:name="com.horizam.sapid.activities.SignInActivity" />
         <activity android:name="com.horizam.sapid.activities.QrCameraCodeScannerActivity" />
-
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <service
             android:name="com.horizam.sapid.MyFirebaseMessagingService"
             android:exported="false">

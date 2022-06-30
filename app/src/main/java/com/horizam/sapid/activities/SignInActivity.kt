@@ -77,7 +77,9 @@ class SignInActivity : AppCompatActivity() {
                 stopLoadingOnButton()
                 body.also {
                     if (it!!.status == 200) {
-                        loginUser(it!!.status!!, it!!.message!!, it.token!!,it.profile!!.id!!)
+                        loginUser(it!!.status!!, it!!.message!!, it.token!!,it.profile!!.id!! ,
+                            it.profile!!.username!!
+                        )
                     } else {
                         Toast.makeText(App.getAppContext(), it.message, Toast.LENGTH_SHORT).show()
                     }
@@ -106,16 +108,18 @@ class SignInActivity : AppCompatActivity() {
         return false
     }
 
-    private fun saveAccessTokenAndUserName(token: String,id: Int) {
+    private fun saveAccessTokenAndUserName(token: String, id: Int, username: String) {
         prefManager = PrefManager(this)
         prefManager.setAccessToken(token)
+        prefManager.setUserSearchName(username)
+        prefManager.setUsername(username)
         prefManager.setUserId(id)
         Constants.STR_TOKEN = token
     }
-    private fun loginUser(status: Int, message: String, token: String,id:Int) {
+    private fun loginUser(status: Int, message: String, token: String, id: Int, username: String) {
         if (status == 200) {
             Toast.makeText(App.getAppContext(), message, Toast.LENGTH_SHORT).show()
-            saveAccessTokenAndUserName(token,id)
+            saveAccessTokenAndUserName(token,id , username)
             val intent = Intent(App.getAppContext(), MainActivity::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
             startActivity(intent)

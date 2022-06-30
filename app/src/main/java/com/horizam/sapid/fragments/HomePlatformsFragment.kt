@@ -74,6 +74,11 @@ class HomePlatformsFragment : Fragment() {
         clickListeners()
         setRecyclerview()
         exeUserprofileApi()
+        if(prefManager.getDirectState()!! == 0){
+            direct = 1
+        }else{
+            direct = 0
+        }
         return binding.root
     }
 
@@ -374,8 +379,9 @@ class HomePlatformsFragment : Fragment() {
 
 
     private fun exeChangeDirectButtonState() {
+
         var directOnOffRequest =
-            DirectOnOffRequest(platforms[0].id!!, direct,platforms[0].path!!)
+            DirectOnOffRequest(platforms[0].id!!, direct ,platforms[0].path!!)
         changeDirectButton(directOnOffRequest)
     }
 
@@ -389,7 +395,6 @@ class HomePlatformsFragment : Fragment() {
                 override fun onSuccess(body: UserResponse?) {
                     stopLoadingOnButton(direct)
                     if (body != null) {
-
                         if (body.status == 200) {
                             changeDirectButtonState(
                                 body.profile!!.direct!!
@@ -447,8 +452,8 @@ class HomePlatformsFragment : Fragment() {
     }
 
     private fun showLoadingOnButton() {
-        binding.btnDirectOnOff.backgroundTintList =
-            ContextCompat.getColorStateList(requireContext(), R.color.app_color)
+//        binding.btnDirectOnOff.backgroundTintList =
+//            ContextCompat.getColorStateList(requireContext(), R.color.app_color)
         binding.btnDirectOnOff.isClickable = false
         binding.btnDirectOnOff.text = ""
         binding.progressDirectOnOff.visibility = View.VISIBLE

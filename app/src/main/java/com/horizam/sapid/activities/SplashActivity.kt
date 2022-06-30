@@ -31,6 +31,7 @@ class SplashActivity : AppCompatActivity() {
     }
 
     private fun setLocalization() {
+        var prefManager = PrefManager(this)
         if (prefManager.getLang()!!.isNotEmpty()) {
             Locale.setDefault(Locale(prefManager.getLang()))
             val config = Configuration()
@@ -38,11 +39,13 @@ class SplashActivity : AppCompatActivity() {
             baseContext.resources.updateConfiguration(config, null)
         } else {
             if (Locale.getDefault().getLanguage().equals("es")) {
+                prefManager.setLang("es")
                 Locale.setDefault(Locale("es"))
                 val config = Configuration()
                 config.locale = Locale("es")
                 baseContext.resources.updateConfiguration(config, null)
             } else {
+                prefManager.setLang("en")
                 Locale.setDefault(Locale("en"))
                 val config = Configuration()
                 config.locale = Locale("en")

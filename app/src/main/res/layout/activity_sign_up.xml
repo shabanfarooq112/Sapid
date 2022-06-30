@@ -78,7 +78,7 @@
             android:textColor="@color/color_text"
             app:ccp_arrowColor="@color/grey_100"
             app:ccp_flagBorderColor="@color/color_text"
-            app:ccpDialog_backgroundColor="@color/color_text"
+            app:ccpDialog_backgroundColor="@color/white"
             />
 
         <EditText

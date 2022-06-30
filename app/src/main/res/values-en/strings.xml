@@ -1,11 +1,11 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Sapid</string>
     <string name="str_welcome_to_tikl">Welcome to Sapid</string>
-    <string name="str_instantly_share_anything">Instantly share anything</string>
+    <string name="str_instantly_share_anything">CONNECTING TO ANOTHER LEVEL</string>
     <string name="str_set_up_your_tikl">Set up your Sapid</string>
     <string name="str_buy_a_tikl">Buy a Sapid</string>
     <string name="str_already_have_tikl">Already have Sapid?</string>
-    <string name="str_sign_in">Sign in</string>
+    <string name="str_sign_in">Login</string>
     <string name="str_welcome_back">Welcome back</string>
     <string name="str_email">email</string>
     <string name="str_password">password</string>
@@ -52,8 +52,8 @@
     <string name="str_connect">Connect</string>
     <string name="str_disconnect">Disconnected</string>
     <string name="str_which_tikl_product_whould_you_like_to_activate">Which Sapid product whould you like to activate?</string>
-    <string name="direct_off">Direct Off</string>
-    <string name="direct_on">Direct On</string>
+    <string name="direct_off">Share All</string>
+    <string name="direct_on">Personalize</string>
     <string name="edit_profile">Edit profile</string>
     <string name="your_tikl_opens_directly_to_your_first_link">Your Sapid opens directly to your first link transparent</string>
     <string name="direct_on_str" translatable="false">Your Sapid opens directly to your first link</string>

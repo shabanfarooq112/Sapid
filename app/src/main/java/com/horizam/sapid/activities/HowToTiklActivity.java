@@ -154,38 +154,38 @@ public class HowToTiklActivity extends AppCompatActivity {
             while (i!=6){
             if (position==i) {
                 if (i==0){
-                    ImageView gif=view.findViewById(R.id.iv_gif);
-                    Glide.with(getApplicationContext())
-                            .load(R.raw.gif_popl_to_iphone)
-                            .into(gif);
+//                    ImageView gif=view.findViewById(R.id.iv_gif);
+//                    Glide.with(getApplicationContext())
+//                            .load(R.raw.gif_popl_to_iphone)
+//                            .into(gif);
                 }else if(i==1){
-                    ImageView gif=view.findViewById(R.id.iv_gif);
-                    Glide.with(getApplicationContext())
-                            .load(R.raw.gif_read_activate)
-                            .into(gif);
+//                    ImageView gif=view.findViewById(R.id.iv_gif);
+//                    Glide.with(getApplicationContext())
+//                            .load(R.raw.gif_read_activate)
+//                            .into(gif);
                 }else if(i==2){
-                    ImageView gif=view.findViewById(R.id.iv_gif);
-                    Glide.with(getApplicationContext())
-                            .load(R.raw.gif_popl_direct)
-                            .into(gif);
+//                    ImageView gif=view.findViewById(R.id.iv_gif);
+//                    Glide.with(getApplicationContext())
+//                            .load(R.raw.gif_popl_direct)
+//                            .into(gif);
                 } else if(i==3){
-                    ImageView gif=view.findViewById(R.id.iv_gif);
-                    Glide.with(getApplicationContext())
-                            .load(R.raw.gif_popl_direct)
-                            .into(gif);
+//                    ImageView gif=view.findViewById(R.id.iv_gif);
+//                    Glide.with(getApplicationContext())
+//                            .load(R.raw.gif_popl_direct)
+//                            .into(gif);
                 }
                 else if(i==4){
-                    ImageView gif=view.findViewById(R.id.iv_gif);
-                    Glide.with(getApplicationContext())
-                            .load(R.raw.gif_qr)
-                            .into(gif);
+//                    ImageView gif=view.findViewById(R.id.iv_gif);
+//                    Glide.with(getApplicationContext())
+//                            .load(R.raw.gif_qr)
+//                            .into(gif);
                 }
 
                 if (i == 5) {
-                    ImageView gif=view.findViewById(R.id.iv_gif);
-                    Glide.with(getApplicationContext())
-                            .load(R.raw.lets_get_popin)
-                            .into(gif);
+//                    ImageView gif=view.findViewById(R.id.iv_gif);
+//                    Glide.with(getApplicationContext())
+//                            .load(R.raw.lets_get_popin)
+//                            .into(gif);
                     TextView textViewContinue = view.findViewById(R.id.tv_continue_layout_one);
                     textViewContinue.setOnClickListener(new View.OnClickListener() {
                         @Override

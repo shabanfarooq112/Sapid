@@ -35,6 +35,7 @@ import com.horizam.sapid.networking.response.CategoryAndPlatformResponse
 import com.horizam.sapid.networking.response.UserResponse
 import com.horizam.sapid.utils.ImageFilePath
 import com.theartofdev.edmodo.cropper.CropImage
+import com.yalantis.ucrop.UCrop
 import id.zelory.compressor.Compressor
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -45,7 +46,6 @@ import java.io.File
 import java.text.SimpleDateFormat
 import java.util.*
 import java.util.Calendar.getInstance
-import kotlin.collections.ArrayList
 
 
 class EditProfileActivity : AppCompatActivity() {
@@ -57,10 +57,8 @@ class EditProfileActivity : AppCompatActivity() {
     private lateinit var adapter: PlatformsAdapter
     private lateinit var prefManager: PrefManager
     var makePrivate = 0
-
     private var imageSelected: Boolean = false
     private var imageUrl: String? = null
-
     private lateinit var arrayOfGenders: Array<String>
     private var genderTypeDefault: Int = -1
     private var comingFromTakePictureIntentAfterCroping = false;
@@ -230,7 +228,6 @@ class EditProfileActivity : AppCompatActivity() {
             Intent.createChooser(intent, resources.getString(R.string.select_picture)),
             Constants.IMAGE_PICK_CODE
         );
-
     }
 
     override fun onRequestPermissionsResult(
@@ -614,32 +611,23 @@ class EditProfileActivity : AppCompatActivity() {
         super.onActivityResult(requestCode, resultCode, data)
         if (resultCode == Activity.RESULT_OK && requestCode == Constants.IMAGE_PICK_CODE) {
             var uri = data!!.data
-//
-//            CropImage.activity(uri)
-//                .setGuidelines(CropImageView.Guidelines.ON)
-//                .setCropShape(CropImageView.CropShape.OVAL)
-//                .setActivityTitle(resources.getString(R.string.crop_image))
-//                .setFixAspectRatio(true)
-//                .setCropMenuCropButtonTitle(resources.getString(R.string.done))
-//                .start(this)
-            Glide.with(this)
-                .load(uri)
-                .placeholder(R.drawable.img_profile)
-                .into(binding.cvProfileEditProfile)
-
-            binding.ivRemoveImage.visibility = View.VISIBLE
-            imageSelected = true
-            imageUrl = ImageFilePath().getPath(this, uri!!)
-
-            comingFromTakePictureIntentAfterCroping = true
-
+            var destinationFileName = System.currentTimeMillis().toString()+".png"
+            val uCrop = UCrop.of(uri!!, Uri.fromFile(File(cacheDir, destinationFileName)))
+            uCrop.start(this)
         }
 
-        if (requestCode == CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE && data != null) {
-            val result: CropImage.ActivityResult = CropImage.getActivityResult(data)
-            if (resultCode == Activity.RESULT_OK) {
-                val uri: Uri = result.uri!!
-            }
+        if (resultCode == RESULT_OK && requestCode == UCrop.REQUEST_CROP) {
+            var uri: Uri = UCrop.getOutput(data!!)!!;
+                Glide.with(this)
+                    .load(uri)
+                    .placeholder(R.drawable.img_profile)
+                    .into(binding.cvProfileEditProfile)
+
+                binding.ivRemoveImage.visibility = View.VISIBLE
+                imageSelected = true
+                imageUrl = ImageFilePath().getPath(this, uri!!)
+
+                comingFromTakePictureIntentAfterCroping = true
 
         }
 
